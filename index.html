@@ -11,51 +11,143 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main>
-        <div class="container header">
-            <div class="logoSection">
-                <img src="images/logo.svg" alt="" class="topLogo">
-            </div>
-            <nav>
-                <a href="#" class="navItem">Features</a>
-                <a href="#" class="navItem">Team</a>
-                <a href="#" class="navItem">Sign In</a>
-            </nav>
+    <header>
+        <div class="logoSection">
+            <img src="images/logo.svg" alt="" class="topLogo">
         </div>
-        <!-- <div class="container upperContainer">
-            <div class="content details">
-                 <p class="heading paraHeading">
+        <nav>
+            <a href="#" class="navItem">Features</a>
+            <a href="#" class="navItem">Team</a>
+            <a href="#" class="navItem">Sign In</a>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="container upperContainer">
+            <div class="content upperDetails">
+                 <p class="heading upperHeading">
                     All your files in one secure location, accessible anywhere.
                  </p>
-                 <p class="para paraDescription">
+                 <p class="para upperDescription">
                     Fylo stores your most important files in one secure location. 
                     Access them wherever you need, share and collaborate with friends, 
                     family, and co-workers.
                  </p>
                  <div class="inputSection">
-                    <input type="email" placeholder="Enter your email" name="email" class="email">
-                    <button class="button getStarted">Get Started</button>
+                    <input type="email" placeholder="Enter your email" name="email" class="email" required>
+                    <button type="submit" class="button getStarted">Get Started</button>
                  </div>
             </div>
             <div class="content image">
-                <img src="images/icon-quotes.svg" alt="" class="upperImage">
+                <img src="images/illustration-1.svg" alt="" class="upperImage">
             </div>
-        </div> -->
-        <!-- <div class="container lowerContainer">
-            <div class="content details">
-                 <p class="heading paraHeading">
-                    All your files in one secure location, accessible anywhere.
+        </div>
+        <div class="container middleContainer">
+            <div class="imageSection">
+                <img src="images/bg-curve-desktop.svg" alt="" class="desktopBG">
+                <img src="images/bg-curve-mobile.svg" alt="" class="mobileBG">
+            </div>
+            <div class="content middleDetails">
+                 <p class="heading middleHeading">
+                    Stay productive, wherever you are
                  </p>
-                 <p class="para paraDescription">
-                    Fylo stores your most important files in one secure location. 
-                    Access them wherever you need, share and collaborate with friends, 
-                    family, and co-workers.
+                 <p class="para middleDescription">
+                    Never let location be an issue when accessing your files. Fylo has you 
+                    covered for all of your file storage needs.
                  </p>
+                 <p class="para middleDescription">
+                    Securely share files and folders with friends, family and colleagues for 
+                    live collaboration. No email attachments required!
+                 </p>
+                 <a href="#" class="work">
+                    <p class="para paraWork">See how fylo works</p>
+                    <div class="imageSection">
+                        <img src="images/arrow.svg" alt="" class="arrowLogo">
+                    </div>
+                </a>
+                <div class="subcontainer">
+                    <div class="imageSection">
+                        <img src="images/icon-quote.svg" alt="" class="quoteImage">
+                    </div>
+                    <p class="para subcontainerDescription">
+                        Fylo has improved our team productivity by an order of magnitude. Since 
+                          making the switch our team has become a well-oiled collaboration machine.
+                    </p>
+                    <div class="profileSection">
+                        <div class="imageSection">
+                            <img src="images/yugin.jpg" alt="" class="profile">
+                        </div>
+                        <div class="profileDetails">
+                            <p class="para name">Yugin Paudel</p>
+                            <p class="post">Founder & CEO</p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="content image">
-                <img src="images/icon-quotes.svg" alt="" class="upperImage">
+                <img src="images/illustration-2.svg" alt="" class="upperImage">
             </div>
-        </div> -->
+        </div>
+        <div class="container lowerContainer">
+            <div class="content lowerDetails1">
+                <p class="heading lowerHeading">
+                    Get early access today
+                </p>
+                <p class="para lowerDescription">
+                    It only takes a minute to sign up and our free starter tier is extremely generous. 
+                    If you have any questions, our support team would be happy to help you.                  
+                </p>
+            </div>
+            <div class="content lowerDetails2">
+                <div class="inputSection">
+                    <input type="email" placeholder="Enter your email" name="email" class="email">
+                    <button class="button getStarted">Get Started For Free</button>
+                 </div>
+            </div>
+        </div>
     </main>
+    <footer>
+        <div class="content footerContent contactSection">
+            <div class="logoSection">
+                <img src="images/footerLogo.svg" alt="" class="footerLogo">
+            </div>
+            <div class="phoneSection">
+                <div class="imageSection">
+                    <img src="images/icon-phone.svg" alt="" class="phoneLogo">
+                </div>
+                <p class="para footerPara">
+                    Phone: 1234567890
+                </p>
+            </div>
+            <div class="emailSection">
+                <div class="imageSection">
+                    <img src="images/icon-email.svg" alt="" class="emailLogo">
+                </div>
+                <p class="para footerPara">
+                    example@gmail.com
+                </p>
+            </div>
+        </div>
+        <div class="content footerContent helpSection">
+            <a href="#" class="helpItem">About Us</a>
+            <a href="#" class="helpItem">Contact Us</a>
+            <a href="#" class="helpItem">Jobs</a>
+            <a href="#" class="helpItem">Terms</a>
+            <a href="#" class="helpItem">Press</a>
+            <a href="#" class="helpItem">Privacy</a>
+            <a href="#" class="helpItem">Blog</a>
+        </div>
+        <div class="content footerContent socialMedia">
+            <div class="imageSection">
+                <img src="images/icon-facebook.svg" alt="" class="contactLogo">
+            </div>
+            <div class="imageSection">
+                <img src="images/icon-twitter.svg" alt="" class="contactLogo">
+            </div>
+            <div class="imageSection">
+                <img src="images/icon-instagram.svg" alt="" class="contactSection">
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

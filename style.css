@@ -9,7 +9,7 @@
     --desaturatedBlue: #585989;
     --brightBlue: #3065f8;
     --moderateCyan: #3c9f8f;
-    --grayishBlue: #f6f6fe;
+    --grayishBlue: #F8F8FE;
     --lightGray: #bfbfbf;
     --fontPrimary: Raleway;
     --fontSecondary: Open Sans;
@@ -19,34 +19,45 @@ body{
     background-color: white;
 }
 
-main{
-    padding: 50px;
-    border: 1px solid red;
-}
-
-.container{
+header, footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid red;
+    padding: 30px 50px;
+}
+
+main{
+    font-family: var(--fontPrimary);
+}
+
+.container, .content{
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+}
+
+.content{
+    flex-direction: column;
+    align-items: baseline;
+    width: 50%;
 }
 
 img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: fill;
 }
 
 .logoSection{
-    width: 100px;
-    border: 1px solid black;
+    width: 150px;
     display: flex;
     align-items: center;
 }
 
 nav{
-    width: 20%;
-    border: 1px solid black;
+    width: 30%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -54,19 +65,325 @@ nav{
 
 a{
     text-decoration: none;
-    color: black;
-    font-family: var(--fontPrimary);
-    font-size: 13px;
     font-weight: bold;
+    font-family: var(--fontPrimary);
+    color: var(--darkBlue);
+    cursor: pointer;
+    transition: color 0.2s linear;
+}
+
+a:hover{
+    color: var(--brightBlue);
+}
+
+.heading{
+    color: var(--darkBlue);
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35px;
+    margin-bottom: 10px;
+    width: 80%;
+}
+
+.para{
+    width: 90%;
+    font-weight: 500;
+    font-family: var(--fontSecondary);
+    color: var(--darkBlue);
+    margin-bottom: 20px;
+}
+
+.inputSection{
+    width: 80%;
+}
+
+.email{
+    padding: 10px;
+    border: 1.5px solid var(--darkBlue);
+    border-radius: 3px;
+    width: 60%;
+    margin-right: 10px;
+}
+
+.button{
+    width: 35%;
+    padding: 10px;
+    color: white;
+    box-shadow: 0px 2px 3px rgba(154, 154, 154, 0.545);
+    border: none;
+    border-radius: 3px;
+    font-weight: 500;
+    font-family: var(--fontPrimary);
+    cursor: pointer;
+    transition: opacity 0.2s linear;
+}
+
+.button:hover, .work:hover{
+    opacity: 70%;
+}
+
+.getStarted{
+    background-color: var(--brightBlue);
+}
+
+.middleContainer{
+    background-color: var(--grayishBlue);
+    position: relative;
+    margin-top: 100px;
+}
+
+.middleContainer>.imageSection{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+}
+
+.middleDescription{
     color: var(--desaturatedBlue);
 }
 
-@media only screen and (max-width:450px) {
-    main{
-        padding: 10px;
-    }
+.mobileBG{
+    display: none;
+}
 
+.work{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 40px;
+    border-bottom: 1.5px solid var(--moderateCyan);
+    transition: opacity 0.2s linear;
+}
+
+.paraWork{
+    color: var(--moderateCyan);
+    margin: 0;
+}
+
+.subcontainer{
+    width: 65%;
+    background-color: white;
+    box-shadow: 1px 1px 5px rgba(168, 167, 167, 0.538);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.subcontainer>.imageSection{
+    width: 20px;
+}
+
+.subcontainerDescription{
+    width: 100%;
+}
+
+.profileSection{
+    display: flex;
+    align-items: center;
+}
+
+.profileSection>.imageSection{
+    width: 15%;
+    margin-right: 10px;
+}
+
+.profile{
+    border-radius: 50%;
+}
+
+.name, .post{
+    margin: 0;
+    width: 100%;
+    font-weight: bold;
+}
+
+.post{
+    margin-top: 5px;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.lowerContainer{
+    background-color: var(--desaturatedBlue);
+}
+
+.lowerHeading{
+    color: white;
+}
+
+.lowerDescription{
+    color: var(--lightGray);
+}
+
+.lowerDetails2>.inputSection{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.lowerDetails2>.inputSection>.email{
+    width: 100%;
+    border: none;
+}
+
+.lowerDetails2>.inputSection>.button{
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.545);
+    width: fit-content;
+}
+
+footer{
+    background-color: var(--darkBlue);
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerContent{
+    width: 30%;
+}
+
+.phoneSection ,.emailSection{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.phoneSection>.imageSection, .emailSection>.imageSection{
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+
+.footerPara, .helpItem{
+    color: var(--lightGray);
+    font-family: var(--fontSecondary);
+    margin: 0;
+}
+
+.helpSection{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    margin-top: 100px;
+}
+
+.socialMedia{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 20px;
+}
+
+.socialMedia>.imageSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--lightGray);
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    padding: 10px;
+    width: 40px;
+    cursor: pointer;
+    transition: border 0.2s linear, background-color 0.2s linear;
+}
+
+.socialMedia>.imageSection:hover{
+    border: 1px solid var(--brightBlue);
+    background-color: var(--brightBlue);
+}
+
+@media only screen and (max-width:540px) {
+    header, .container, footer{
+        padding: 50px 10px;
+        width: 100%;      
+    }
+    
     nav{
         width: 60%;
+        font-size: 13px;
     }
+
+    .logoSection{
+        width: 100px;
+    }
+    
+    .upperContainer, .middleContainer{
+        flex-direction: column-reverse;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .para, .heading{
+        width: 100%;      
+        margin-bottom: 30px;
+    }
+
+    .heading{
+        font-size: 25px;
+    }
+
+    .inputSection{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .content, .email, .button, .inputSection, 
+    .lowerDetails2>.inputSection>.button{
+        width: 100%;
+    }
+
+    .middleDetails, .lowerContainer, .lowerDetails2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .middleHeading{
+        font-size: 20px;
+    }
+
+    .middleDescription{
+        text-align: left;
+        font-size: 14px;
+    }
+    
+    .paraWork, .name, .footerPara, .footerContent{
+        margin: 0;
+    }
+    
+    .work>.imageSection{
+        height: fit-content;
+    }
+    
+    .subcontainer{
+        text-align: left;
+        font-size: 14px;
+        width: 90%;
+    }
+    
+    .middleContainer>.imageSection{
+        top: -50px;
+    }
+        
+    .desktopBG{
+        display: none;
+    }
+
+    .mobileBG{
+        display: block;
+    }
+
+    .lowerDetails2>.inputSection{
+        width: 80%;
+    }
+
+    footer, footer>.helpSection{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .socialMedia{
+        justify-content: center;
+    }
+
 }
